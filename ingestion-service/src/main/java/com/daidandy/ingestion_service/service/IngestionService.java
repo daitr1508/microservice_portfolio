@@ -1,7 +1,7 @@
 package com.daidandy.ingestion_service.service;
 
 import com.daidandy.ingestion_service.dto.EnergyUsageDto;
-import com.daidandy.ingestion_service.kafka.event.EnergyUsageEvent;
+import com.daidandy.kafka.event.EnergyUsageEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;

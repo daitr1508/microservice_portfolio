@@ -12,6 +12,7 @@ services:
       - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
       - db-data:/var/lib/mysql
       - db-data:/var/log/mysql
+
   kafka:
     container_name: kafka
     image: apache/kafka:latest
@@ -42,7 +43,7 @@ services:
       # Network Listeners (Internal, External & Controller)
       ############################################
       # Define all listener endpoints for this Kafka node
-      KAFKA_LISTENERS: >
+      KAFKA_LISTENERS:
         PLAINTEXT://0.0.0.0:9092,
         EXTERNAL://0.0.0.0:9094,
         CONTROLLER://0.0.0.0:9093
@@ -50,7 +51,7 @@ services:
       # What each listener advertises to connecting clients
       # Internal (Docker containers): kafka:9092
       # External (host machine): localhost:9094
-      KAFKA_ADVERTISED_LISTENERS: >
+      KAFKA_ADVERTISED_LISTENERS:
         PLAINTEXT://kafka:9092,
         EXTERNAL://localhost:9094
 
