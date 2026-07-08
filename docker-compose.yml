@@ -110,7 +110,7 @@ services:
       - DOCKER_INFLUXDB_INIT_ORG=daidandy
       - DOCKER_INFLUXDB_INIT_BUCKET=usage-bucket
       - DOCKER_INFLUXDB_INIT_RETENTION=1w
-      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=tNrr2Ye5Idsg1CgY2EDUheNJAnKEwabfyyo4dhFDZ1Q0iC06r-9PwjYggzWeL0nt8TfY5UhNG_Yk8twKfs6nrw==
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=7VqgWGWk1F9ffz6ImZP2jgUVSZcXNJEW1yWzRo6FmB4NoTPey2uwldIBWAwiwNeKDBhi4NUqS_d5YwiWmVB0ug==
     volumes:
       - ./influxdb_data:/var/lib/influxdb2
 
