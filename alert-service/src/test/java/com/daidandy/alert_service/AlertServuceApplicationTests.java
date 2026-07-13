@@ -1,4 +1,4 @@
-package com.daidandy.alert_servuce;
+package com.daidandy.alert_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
